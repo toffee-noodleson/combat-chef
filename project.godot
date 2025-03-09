@@ -13,13 +13,23 @@ config_version=5
 config/name="combat-chef"
 run/main_scene="uid://dcsic5bbqfgir"
 config/features=PackedStringArray("4.4", "Mobile")
-config/icon="res://icon.svg"
+config/icon="uid://c1ca36fhms6l2"
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=800
 window/stretch/mode="canvas_items"
+
+[layer_names]
+
+2d_physics/layer_1="player_hurtbox"
+2d_physics/layer_2="player_hitbox"
+2d_physics/layer_3="player_interact"
+2d_physics/layer_4="enemy_hurtbox"
+2d_physics/layer_5="enemy_hitbox"
+2d_physics/layer_6="obstacle"
+2d_physics/layer_7="interact_object"
 
 [rendering]
 
